@@ -4,7 +4,7 @@
 
 ### Système
 
-- [Installer OpenBSD 6.0 sur votre serveur Kimsufi](https://dodoritfort.github.io/Geek-IT/installer_openbsd_6-0_sur_votre_serveur_kimsufi.md)
+- [Installer OpenBSD 6.0 sur votre serveur Kimsufi](https://dodoritfort.github.io/Geek-IT/installer_openbsd_6-0_sur_votre_serveur_kimsufi)
 - Installer et configurer Nano
 - Configurer DOAS
 - Configurer SSH
