@@ -3,7 +3,7 @@
 ## Installer le système d'exploitation et obtenir des informations
 
 Une fois notre serveur Kimsufi en poche, nous devons commencer par installer un système d’exploitation.
-Nous choisirons donc d’installer **Debian 7.10 (Wheezy) (oldstable) 64 bits**. Une fois l'installation terminée, nous recevons un mail avec les identifiants de connexion SSH.
+Nous choisirons donc d’installer `Debian 7.10 (Wheezy) (oldstable) 64 bits`. Une fois l'installation terminée, nous recevons un mail avec les identifiants de connexion SSH.
 
 Nous nous connectons ensuite à notre serveur en SSH à l'aide du logiciel PuTTY.
 
@@ -74,9 +74,9 @@ search ovh.net
 
 ## Préparation de l'installation
 
-Après quoi nous devons nous rendre sur notre interface client Kimsufi et paramétrer notre serveur pour qu'il démarre en mode rescue. Pour cela il suffit de cliquer sur le bouton **Netboot**, puis sur **Rescue** et enfin de sélectionner **rescue64-pro**. Valider en cliquant sur le bouton **Suivant**.
+Après quoi nous devons nous rendre sur notre interface client Kimsufi et paramétrer notre serveur pour qu'il démarre en mode rescue. Pour cela il suffit de cliquer sur le bouton `Netboot`, puis sur 'Rescue' et enfin de sélectionner 'rescue64-pro'. Valider en cliquant sur le bouton `Suivant`.
 
-Pour finir, nous cliquons sur le bouton **Redémarrer** pour faire un redémarrage à froid. L'opération prend quelques secondes/minutes.
+Pour finir, nous cliquons sur le bouton `Redémarrer` pour faire un redémarrage à froid. L'opération prend quelques secondes/minutes.
 
 Lorsque le serveur a démarré en mode rescue, nous recevons à nouveau un mail avec les identifiants de connexion SSH. Nous les utilisons pour nous connecter à nouveau à notre serveur.
 
@@ -94,7 +94,7 @@ permitted by applicable law.
 root@rescue:~#
 ```
 
-Nous allons créer un dossier /tmp et télécharger l'image _miniroot60.fs_ sur le site officiel de l'éditeur.
+Nous allons créer un dossier /tmp et télécharger l'image `miniroot60.fs` sur le site officiel de l'éditeur.
 
 > wget -P /tmp/ http://ftp.fr.openbsd.org/pub/OpenBSD/6.0/amd64/miniroot60.fs
 
@@ -140,7 +140,7 @@ a6ff63e72ed9f45a211b0a57fb566e6f674242988e369209cd6b2a205d8bcec1  /tmp/miniroot6
 a6ff63e72ed9f45a211b0a57fb566e6f674242988e369209cd6b2a205d8bcec1
 ```
 
-Nous nous rendons dans le dossier _/tmp_.
+Nous nous rendons dans le dossier `/tmp`.
 
 > cd /tmp
 
@@ -169,7 +169,7 @@ pressing RETURN.  You can exit this program at any time by pressing
 Control-C, but this can leave your system in an inconsistent state.
 ```
 
-Ici nous choisissons le _keyboard_ que nous souhaitons.
+Ici nous choisissons le `keyboard` que nous souhaitons.
 
 > L
 
@@ -222,9 +222,9 @@ Password for root account? (will not echo)
 Password for root account? (again)
 ```
 
-Nous devons bien entendu démarrer le service _sshd_ par défaut. Sinon il ne nous sera pas possible de nous connecter à notre serveur.
+Nous devons bien entendu démarrer le service `sshd` par défaut. Sinon il ne nous sera pas possible de nous connecter à notre serveur.
 
-Nous n'avons pas l'utilité du service _X Window System_ du fait que le serveur sera uniquement piloté par le mode console. En revanche, pour les personnes souhaitant avoir un _remote desktop_, il faudra activer cette option. Cependant pas de panique, il sera toujours possible de le faire à posteriori.
+Nous n'avons pas l'utilité du service `X Window System` du fait que le serveur sera uniquement piloté par le mode console. En revanche, pour les personnes souhaitant avoir un `remote desktop`, il faudra activer cette option. Cependant pas de panique, il sera toujours possible de le faire à posteriori.
 
 > yes
 
@@ -238,7 +238,7 @@ Do you expect to run the X Window System? [yes] no
 Change the default console to com0? [no]
 ```
 
-Etape importante ! Il faut configurer un utilisateur, celui-ci servira à se connecter à distance à notre serveur. Pour des raisons de sécurité il n'est pas conseillé de permettre à l'utilisateur root de se connecter en SSH. Si tel était le cas, les attaquants pourraient simplement faire du _bruteforce_ via ce compte.
+Etape importante ! Il faut configurer un utilisateur, celui-ci servira à se connecter à distance à notre serveur. Pour des raisons de sécurité il n'est pas conseillé de permettre à l'utilisateur root de se connecter en SSH. Si tel était le cas, les attaquants pourraient simplement faire du `bruteforce` via ce compte.
 
 ```
 Setup a user? (enter a lower-case loginname, or 'no') [no] username
@@ -256,7 +256,7 @@ WARNING: root is targeted by password guessing attacks, pubkeys are safer.
 Allow root ssh login? (yes, no, prohibit-password) [no]
 ```
 
-Enfin, la configuration de la _timezone_.
+Enfin, la configuration de la `timezone`.
 
 > Europe/Paris
 
@@ -264,7 +264,7 @@ Enfin, la configuration de la _timezone_.
 What timezone are you in? ('?' for list) [Europe/Paris]
 ```
 
-A présent, il est temps de configurer le partitionnement sur le disque-dur. Nous allons donc lister les disque-durs du serveur et choisir celui de notre choix. Dans notre exemple, il s'agira de **wd1**. Ensuite, nous utiliserons le **(W)hole disk** et nous ferons un **(A)uto layout**.
+A présent, il est temps de configurer le partitionnement sur le disque-dur. Nous allons donc lister les disque-durs du serveur et choisir celui de notre choix. Dans notre exemple, il s'agira de `wd1`. Ensuite, nous utiliserons le `(W)hole disk` et nous ferons un `(A)uto layout`.
 
 L'opération prend un certain temps...
 
@@ -352,7 +352,7 @@ al, nodev)
 dev, nosuid)
 ```
 
-Il nous faut configurer les _sets_. Les choix par défaut sont très bien.
+Il nous faut configurer les `sets`. Les choix par défaut sont très bien.
 
 > http
 
@@ -370,7 +370,7 @@ HTTP Server? (hostname, list#, 'done' or '?') [ftp.fr.openbsd.org]
 Server directory? [pub/OpenBSD/6.0/amd64]
 ```
 
-Ici, nous désactivons certains _sets_. Mais surtout, nous activons le _set_ **bsd.mp**. Celui-ci est nécessaire pour l'utilisation d'un processeur multi-coeurs.
+Ici, nous désactivons certains `sets`. Mais surtout, nous activons le `set` `bsd.mp`. Celui-ci est nécessaire pour l'utilisation d'un processeur multi-coeurs.
 
 > -g* -x*
 
@@ -463,7 +463,7 @@ puis activer la gestion multi-coeurs.
 
 > cp /mnt/bsd.mp /mnt/bsd
 
-Puis terminons par un **halt**.
+Puis terminons par un `halt`.
 
 > halt
 
