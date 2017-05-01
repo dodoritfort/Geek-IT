@@ -4,8 +4,7 @@
 
 ### Système
 
-- Installer OpenBSD 6.0 sur votre serveur Kimsufi
-- Installer OpenBSD 6.1 dans une machine virtuelle Proxmox
+- [Installer OpenBSD 6.0 sur votre serveur Kimsufi](https://dodoritfort.github.io/Geek-IT/installer_openbsd_6-0_sur_votre_serveur_kimsufi.md)
 - Installer et configurer Nano
 - Configurer DOAS
 - Configurer SSH
