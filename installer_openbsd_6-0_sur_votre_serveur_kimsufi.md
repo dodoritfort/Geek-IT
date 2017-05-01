@@ -1,5 +1,5 @@
 ## Installer OpenBSD 6.0 sur votre serveur Kimsufi
-
+test
 ### Installer le système d'exploitation et obtenir des informations
 
 Une fois notre serveur Kimsufi en poche, nous devons commencer par installer un système d’exploitation. Nous choisirons donc d’installer Debian 7.10 (Wheezy) (oldstable) 64 bits. Une fois l'installation terminée, nous recevons un mail avec les identifiants de connexion SSH.
