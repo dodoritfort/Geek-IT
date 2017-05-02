@@ -1,4 +1,5 @@
 ---
+theme: jekyll-theme-cayman
 title: Afficher / Changer le hostname
 layout: post
 ---
