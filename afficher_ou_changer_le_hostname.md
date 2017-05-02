@@ -1,3 +1,8 @@
+---
+title: Afficher / Changer le hostname
+layout: post
+---
+
 # Afficher / Changer le hostname
 
 ## Introduction
